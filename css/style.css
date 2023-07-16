@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    gap: .75rem;
+    justify-content: center;
+    bottom: 10px;
+    position: relative;
+}
+.logo-renga img{
+    margin-bottom: 10rem;
+}
+
+nav ul li a{
+    font-family:titulos;
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.732) ;
+}
+nav ul li a:hover {
+    color: brown;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    height: 150px;
+    background-color: black;
+}
+.footer-div {
+    color: white;
+    position: relative;
+}
+.redes-footer {
+    display: flex;
+    justify-content: center;
+    gap:60px;
+}
+.redes-footer div a{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    gap: .75rem;
+    justify-content: center;
+    bottom: 10px;
+    position: relative;
+}
+
+
+@font-face {
+    font-family:titulos;
+    src: url(../asset/font/beba.ttf);
+}
+@font-face {
+    font-family:cuerpos ;
+    src: url(../asset/font/rubik.ttf);
+}
+body {
+    font-family:titulos;
+    background-image: url(../asset/img/fondo-6.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+body h1{
+    color: white;
+}
+.section-index {
+    background-image: url(../asset/img/banda.jpg);
+    width: 31.25rem;
+    height: 31.25rem;
+    background-position: center;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: solid 2px #a52a2a ;
+    border-radius: 100px 100px 150px 50px ;
+    
+}
+.section-index a {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-family:cuerpos;
+    font-size: 30px;
+    list-style:none ;
+    text-decoration: none;
+    color: white;
+}
+.section-index-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    bottom: 150px;
+}
+.div-main {
+    font-family:cuerpos;
+}
+.div-productos{
+    font-family: titulos;
+    font-size: 25px;
+    background-color: #a52a2a;
+}
+.section-productos{
+    font-family: cuerpos;
+    font-size: 25px;
+}
+section a{
+    font-size: 2.5rem;
+}
+section a:hover{
+    color: brown;
+}
+/* Informaicon de la banda */
+main div section p{
+    background-color: aliceblue;
+    
+}
+.integrantes-container{
+    background-color: hsla(0, 0%, 98%, 0.663);
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax( 300px, 1fr));
+    gap: 1rem;
+}
+.foto-chizzo{
+    width:300px;
+    height: 300px;
+    border: solid brown 2px;
+}
+.foto-manu{
+    width:300px;
+    height: 300px;
+    border: solid brown 2px;
+
+}
+.foto-tete{
+    width:300px;
+    height: 300px;
+    border: solid brown 2px;
+
+}
+.foto-tanque{
+    width:300px;
+    height: 300px;
+    border: solid brown 2px;
+
+}
+@media(max-width 320px){
+    .section-index{
+        text-align: center;
+    }
+    .logo-renga {
+        height: 150px;
+        width: 150px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
