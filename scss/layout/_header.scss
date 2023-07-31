@@ -1,0 +1,32 @@
+header {
+	nav {
+		ul {
+			display: flex;
+			list-style-type: none;
+			flex-direction: row;
+			gap: .75rem;
+			justify-content: center;
+			bottom: 10px;
+			position: relative;
+		}
+	}
+}
+.logo-renga {
+	img {
+		margin-bottom: 10rem;
+	}
+}
+nav {
+	ul {
+		li {
+			a {
+				font-family: $font-family_1;
+				color: $color_1;
+				background-color: $background-color_1;
+				&:hover {
+					color: $color_2;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.integrantes-container{
+    background-color: hsla(0, 0%, 98%, 0.663);
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax( 300px, 1fr));
+    gap: 1rem;
+}
+.foto-chizzo{
+    width:300px;
+    height: 300px;
+    border: solid brown 2px;
+}
+.foto-manu{
+    width:300px;
+    height: 300px;
+    border: solid brown 2px;
+
+}
+.foto-tete{
+    width:300px;
+    height: 300px;
+    border: solid brown 2px;
+
+}
+.foto-tanque{
+    width:300px;
+    height: 300px;
+    border: solid brown 2px;
+
+}

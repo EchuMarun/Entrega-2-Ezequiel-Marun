@@ -1,0 +1,66 @@
+.ubi{
+    @include flex;
+    align-items: center;
+}
+.punto-venta{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    margin: 20px;
+}
+.punto-venta ul{
+    list-style: none;
+}
+.punto-venta p{
+    font-size: 30px;
+    color: aquamarine;
+}
+.online-venta{
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 20px;
+}
+.online-venta p{
+    color: green;
+    font-size:50px;
+}
+.button-online{
+    width:340px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 40px;
+    cursor: pointer;
+    animation: cambioFondo 1s infinite;
+}
+@keyframes cambioFondo {
+    0% {
+        background-color: #0414f3;
+    }
+    20% {
+        background-color: #2804f3;
+    }
+    40% {
+        background-color: #0444f3;
+    }
+    60% {
+        background-color: #0487f3;
+    }
+    80% {
+        background-color: #04aff3;
+    }
+    100% {
+        background-color: #04f3d3;
+    }
+}
+.nuevo-show{
+    display: flex;
+    color: whitesmoke;
+    flex-direction: column;
+    text-align: center;
+    background-color: hsla(207, 97%, 48%, 0.587);
+    width: 20%;
+    margin-left: 40%;
+    }

@@ -1,0 +1,36 @@
+.section-index {
+	background-image: url(../asset/img/banda.jpg);
+	width: 31.25rem;
+	height: 31.25rem;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	border: solid 2px #a52a2a;
+	border-radius: 100px 100px 150px 50px;
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: top;
+		font-family: $font-family_1;
+		font-size: 30px;
+		list-style: none;
+		text-decoration: none;
+		color: $color_1;
+	}
+}
+.section-index-contain {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: 150px;
+}
+.div-main {
+	font-family: $font-family_1;
+}
+.div-productos{
+    font-family: titulos;
+    font-size: 25px;
+    margin-left: 10px;
+}
