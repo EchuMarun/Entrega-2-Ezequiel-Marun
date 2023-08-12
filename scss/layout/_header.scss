@@ -1,4 +1,15 @@
 header {
+	h1{
+		text-align: center;
+		color: red;
+		margin: 32px;
+		font-size: 80px;
+		font-family: "h1";
+		background: -webkit-linear-gradient(#ff0000, #000);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
 	nav {
 		ul {
 			display: flex;
@@ -14,17 +25,23 @@ header {
 .logo-renga {
 	img {
 		margin-bottom: 10rem;
+		
 	}
 }
 nav {
 	ul {
+		display: flex !important;
+		flex-wrap: wrap !important;
 		li {
-			a {
-				font-family: $font-family_1;
-				color: $color_1;
-				background-color: $background-color_1;
-				&:hover {
-					color: $color_2;
+			.btn{
+				a {
+					font-family: $font-family_1;
+					color: $color_1;
+					text-decoration: none;
+					font-weight: bold;
+					&:hover {
+						color: $color_2;
+					}
 				}
 			}
 		}

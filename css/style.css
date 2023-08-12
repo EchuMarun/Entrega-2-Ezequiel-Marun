@@ -6,6 +6,14 @@
   font-family: cuerpos;
   src: url(../asset/font/rubik.ttf); }
 
+@font-face {
+  font-family: anuncios;
+  src: url(../asset/font/anuncios.ttf); }
+
+@font-face {
+  font-family: h1;
+  src: url(../asset/font/la-renga.ttf); }
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +21,16 @@
 
 html {
   overflow-x: hidden; }
+
+header h1 {
+  text-align: center;
+  color: red;
+  margin: 32px;
+  font-size: 80px;
+  font-family: "h1";
+  background: -webkit-linear-gradient(#ff0000, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 header nav ul {
   display: flex;
@@ -26,15 +44,19 @@ header nav ul {
 .logo-renga img {
   margin-bottom: 10rem; }
 
-nav ul li a {
-  font-family: cuerpos;
-  color: white;
-  background-color: black; }
-  nav ul li a:hover {
-    color: brown; }
+nav ul {
+  display: flex !important;
+  flex-wrap: wrap !important; }
+  nav ul li .btn a {
+    font-family: cuerpos;
+    color: white;
+    text-decoration: none;
+    font-weight: bold; }
+    nav ul li .btn a:hover {
+      color: brown; }
 
 body {
-  font-family: titulos;
+  font-family: "titulos";
   background-image: url(../asset/img/fondo-6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,24 +67,20 @@ footer {
   justify-content: center;
   height: 100vh;
   height: 150px;
-  background-color: black; }
-
-.footer-div {
-  color: white;
-  position: relative; }
-
-.redes-footer {
-  display: flex;
-  justify-content: center;
-  gap: 60px; }
-  .redes-footer div a {
+  background-color: black;
+  color: white; }
+  footer .redes-footer {
     display: flex;
-    list-style-type: none;
-    flex-direction: row;
-    gap: .75rem;
     justify-content: center;
-    bottom: 10px;
-    position: relative; }
+    gap: 60px; }
+    footer .redes-footer div a {
+      display: flex;
+      list-style-type: none;
+      flex-direction: row;
+      gap: .75rem;
+      justify-content: center;
+      bottom: 10px;
+      position: relative; }
 
 .section-index {
   background-image: url(../asset/img/banda.jpg);
@@ -91,19 +109,40 @@ footer {
   position: relative;
   bottom: 150px; }
 
+.section-index a {
+  font-family: "titulos";
+  margin-top: 32px;
+  font-size: 33px; }
+
 .div-main {
   font-family: cuerpos; }
 
 .div-productos {
-  font-family: titulos;
-  font-size: 25px;
-  margin-left: 10px; }
+  display: flex !important;
+  justify-content: center !important;
+  font-family: "titulos" !important;
+  margin: 32px !important; }
+  .div-productos .btn {
+    width: 500px;
+    height: 200px; }
+    .div-productos .btn a {
+      text-decoration: none;
+      color: black;
+      font-size: 25px; }
+
+.carousel {
+  margin: 5rem; }
 
 .integrantes-container {
   background-color: rgba(250, 250, 250, 0.663);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem; }
+  grid-template-columns: 1fr;
+  justify-items: start;
+  gap: 1rem;
+  margin-bottom: 50px; }
+  .integrantes-container div {
+    display: flex;
+    align-items: center; }
 
 .foto-chizzo {
   width: 300px;
@@ -125,20 +164,69 @@ footer {
   height: 300px;
   border: solid brown 2px; }
 
+dl {
+  padding: 22px; }
+
+main .nuevo-show-container {
+  font-family: "anuncios"; }
+  main .nuevo-show-container h2 {
+    font-size: 80px;
+    background: -webkit-linear-gradient(#ff0000, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    line-height: 1; }
+  main .nuevo-show-container h3 {
+    font-size: 50px;
+    background: -webkit-linear-gradient(#ff0000, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    line-height: 1; }
+  main .nuevo-show-container .nuevo-show {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+
 .ubi {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+  max-width: 660px; }
+  .ubi div {
+    background-color: #070707;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center; }
+    .ubi div h4 {
+      color: darkorange; }
 
 .punto-venta {
   display: flex;
   text-align: center;
   flex-direction: column;
   color: white;
-  margin: 20px; }
+  background-color: #898787;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+  max-width: 400px;
+  border-radius: 10px; }
 
 .punto-venta ul {
-  list-style: none; }
+  list-style: none;
+  padding-left: 0 !important; }
 
 .punto-venta p {
   font-size: 30px;
@@ -177,33 +265,73 @@ footer {
   100% {
     background-color: #04f3d3; } }
 
-.nuevo-show {
+.registro {
+  background-color: #f8f9fa;
   display: flex;
-  color: whitesmoke;
   flex-direction: column;
-  text-align: center;
-  background-color: rgba(4, 134, 241, 0.587);
-  width: 20%;
-  margin-left: 40%; }
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 10rem; }
+
+.iniciarsesion {
+  margin-bottom: 10rem; }
+
+.login-container {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+  max-width: 400px; }
 
 @media (max-width: 320px) {
   .section-index {
     text-align: center; }
-  .section-index a {
-    font-size: 16px; }
+  .carousel {
+    margin: 1rem; }
   .logo-renga {
-    height: 150px;
-    width: 150px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; }
+    width: 100% !important; }
+    .logo-renga img {
+      width: 100% !important; }
   .nuevo-show {
     width: 90%;
     align-items: start;
     margin-left: 10px; }
   .ubi iframe {
-    width: 100%; } }
+    width: 100%; }
+  header h1 {
+    font-size: 36px; } }
 
 @media (max-width: 375px) {
-  .section-index a {
-    font-size: 20px; } }
+  header h1 {
+    font-size: 36px; }
+  .nuevo-show-container h2 {
+    font-size: 20px !important; }
+  .nuevo-show-container h3 {
+    font-size: 20px !important; } }
+
+@media (max-width: 425px) {
+  header h1 {
+    font-size: 36px; }
+  .integrantes-container div {
+    display: grid; }
+  .carousel {
+    margin: 2rem; } }
+
+@media (max-width: 500px) {
+  .foto-chizzo {
+    margin: 0; }
+  .carousel {
+    margin: 3rem; }
+  .nuevo-show-container h2 {
+    font-size: 50px !important; }
+  .nuevo-show-container h3 {
+    font-size: 30px !important; } }
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 36px; }
+  .ubi iframe {
+    width: 100%; } }

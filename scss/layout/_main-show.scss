@@ -1,16 +1,69 @@
+main{
+    .nuevo-show-container{
+        font-family: "anuncios";
+        h2{
+            font-size: 80px;
+            background: -webkit-linear-gradient(#ff0000, #000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            padding: 10px;
+            margin: 0;
+            line-height: 1; 
+        }
+        h3{
+            font-size: 50px;
+            background: -webkit-linear-gradient(#ff0000, #000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            padding: 10px;
+            margin: 0;
+            line-height: 1; 
+        }
+        .nuevo-show{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            }
+    }
+}
 .ubi{
     @include flex;
     align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    max-width: 660px;
+    div{
+        background-color: #070707;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        h4{
+            color: darkorange;
+        }
+    }
 }
 .punto-venta{
     display: flex;
     text-align: center;
     flex-direction: column;
     color: white;
-    margin: 20px;
+    background-color: #898787;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    max-width: 400px;
+    border-radius: 10px;
 }
 .punto-venta ul{
     list-style: none;
+    padding-left: 0 !important;
 }
 .punto-venta p{
     font-size: 30px;
@@ -55,12 +108,3 @@
         background-color: #04f3d3;
     }
 }
-.nuevo-show{
-    display: flex;
-    color: whitesmoke;
-    flex-direction: column;
-    text-align: center;
-    background-color: hsla(207, 97%, 48%, 0.587);
-    width: 20%;
-    margin-left: 40%;
-    }

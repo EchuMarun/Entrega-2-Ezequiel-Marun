@@ -21,25 +21,31 @@
 </head>
 <body>
     <header>
-        <h1> La Renga oficial </h1>
+        <h1> La Renga </h1>
         <nav>
             <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../pages/registro.html">REGISTRARME</a></li>
-                <li><a href="../pages/iniciarsesion.htm">INGRESAR</a></li>
+                <li><button type="button" class="btn btn-outline-warning"><a href="../index.html">INICIO</a></button></li>
+                <li><button type="button" class="btn btn-outline-warning"><a href="./registro.html">REGISTRARME</a></button></li>
+                <li><button type="button" class="btn btn-outline-warning"><a href="./iniciarsesion.htm">INGRESAR</a></button></li>
+                <li><button type="button" class="btn btn-outline-warning"><a href="./quiensomos.html">INFORMACION</a></button></li>
             </ul>
         </nav>
-        <div>
+        <div class="logo-renga">
             <img src="../asset/img/logo.png" alt="">
         </div>
     </header>
     <main>
-        <section class="nuevo-show">
-            <h2>La Renga en 25 de noviembre de 2023</h2>
-            <h3>USHUAIA, TIERRA DEL FUEGO</h3>
-        </section>           
+        <div class="nuevo-show-container">
+            <section class="nuevo-show">
+                <h2>La Renga en 25 de noviembre de 2023</h2>
+                <h3 >USHUAIA, TIERRA DEL FUEGO</h3>
+            </section>    
+        </div>       
         <div class="ubi">
-            <h4>HANGAR VIEJO AEROPUERTO</h4>
+            <div>
+                <img src="../asset/img/mapa.png" alt="ubicacion">
+                <h4>HANGAR VIEJO AEROPUERTO</h4>
+            </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2297.608688773722!2d-68.31481902253597!3d-54.83955868356095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4c23ba8f25a3f3%3A0xfa013b808fc25b27!2sAeropuerto%20Internacional%20de%20Ushuaia!5e0!3m2!1ses!2sar!4v1690653142700!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div>
@@ -64,7 +70,7 @@
             </div>
         </div>
         <div class="div-productos">
-            <a href="https://www.arteinfernal.com.ar/" target="_blank">Dirigete a Arte Inferal y mira nuestros productos </a>
+            <button type="button" class="btn btn-warning"><a href="https://www.arteinfernal.com.ar/" target="_blank">Dirigete a Arte Inferal y mira nuestros productos </a></button>
         </div>
         
     </main>

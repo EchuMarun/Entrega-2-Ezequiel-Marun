@@ -4,11 +4,7 @@ footer {
 	height: 100vh;
 	height: 150px;
 	background-color: $background-color_1;
-}
-.footer-div {
 	color: $color_1;
-	position: relative;
-}
 .redes-footer {
 	display: flex;
 	justify-content: center;
@@ -24,4 +20,5 @@ footer {
 			position: relative;
 		}
 	}
+}
 }

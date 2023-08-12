@@ -26,11 +26,31 @@
 	position: relative;
 	bottom: 150px;
 }
+.section-index{
+	a{
+		font-family: "titulos";
+		margin-top: 32px;
+		font-size: 33px;
+	}
+}
 .div-main {
 	font-family: $font-family_1;
 }
 .div-productos{
-    font-family: titulos;
-    font-size: 25px;
-    margin-left: 10px;
+	display: flex !important;
+	justify-content: center !important;
+    font-family: "titulos" !important;
+	margin: 32px !important;
+	.btn {
+		width: 500px;
+		height: 200px;
+		a{
+			text-decoration: none;
+			color: black;
+			font-size: 25px;
+		}
+	}
+}
+.carousel{
+	margin: 5rem;
 }

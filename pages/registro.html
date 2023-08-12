@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="LaRenga, La Renga, rock, rocknacional,">
     <meta name="author" content="ezequielmarun">
     <meta name="copyright" content="LaRenga">
-    <meta property="og:title" content="La Renga"> 
+    <meta property="og:title" content="La Renga">
     <meta property="og:description" content="La Renga, Rocknacional. Argentina">
     <meta property="og:site_name" content="La Renga">
     <meta property="og:url" content="">
@@ -16,78 +17,82 @@
     <meta property="og:image:alt" content="La renga">
     <title>Registro</title>
     <link rel="shortcut icon" href="../asset/img/logo.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
-        <h1> La Renga oficial </h1>
+        <h1> La Renga </h1>
         <nav class="nav-bar">
             <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="../pages/productos.html">FECHAS</a></li>
-                <li><a href="../pages/iniciarsesion.htm">INGRESAR</a></li>
+                <li><button type="button" class="btn btn-outline-warning"><a href="../index.html">INICIO</a></button></li>
+                <li><button type="button" class="btn btn-outline-warning"><a href="../pages/productos.html">FECHAS</a></button></li>
+                <li><button type="button" class="btn btn-outline-warning"><a href="../pages/iniciarsesion.htm">INGRESAR</a></button></li>
+                <li><button type="button" class="btn btn-outline-warning"><a href="../pages/quiensomos.html">INFORMACION</a></button></li>
             </ul>
-        <div>
-            <img src="../asset/img/logo.png" alt="">
-        </div>
+            <div class="logo-renga">
+                <img src="../asset/img/logo.png" alt="">
+            </div>
         </nav>
     </header>
     <main>
-        <div>
-            <fieldset>
-                
-                <legend>Crear cuenta en La Renga oficial</legend>
-                <label for="name">Nombre</label>
-                <input type="text" id="name"required>
-                
-                <label for="apellido">Apellido:</label>
-                <input type="text"id="name" required>
-                
-                <label for="edad">Ingrese su fecha de nacimiento</label>
-                <input type="date" id="edad" required>
-                
-                <legend>Selecione su sexo </legend>
-                <label for="hombre">Hombre</label>
-                <input type="radio" id="hombre" name="sexo" value="hombre">
-                
-                <label for="mujer">Mujer</label>
-                <input type="radio" id="mujer" name="sexo"  value="mujer">
-                
-                <legend>Crear contraseña</legend>
-                <label for="contraseña">Contraseña</label>
-                <input type="password" id="contraseña" required placeholder="8caracteres">
-                
-                <label for="contraseña">Repite tu contraseña</label>
-                <input type="password" name="pass" id="contraseña" required placeholder="repita su contraseña">
-                <label for="email">Ingrese su correo electronico</label>
-                <input type="email" id="email" required placeholder="correo">
-                
-                <label for="terminos-condiciones">Lei y acepto las condiciones</label>
-                <input type="checkbox" name="" id="terminos-condiciones">
-                
-                <input type="submit">
-                <input type="reset" value="reset">
-            </fieldset>
+        <div class="registro mt-5">
+            <h2 class="mb-4">Registro de Usuario</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="correo" name="correo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contrasena" class="form-label">Contraseña:</label>
+                    <input type="password" class="form-control" id="contrasena" name="contrasena" minlength="8"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="repiteContrasena" class="form-label">Repite la Contraseña:</label>
+                    <input type="password" class="form-control" id="repiteContrasena" name="repiteContrasena"
+                        minlength="8" required>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="aceptoCondiciones" name="aceptoCondiciones"
+                        required>
+                    <label class="form-check-label" for="aceptoCondiciones">Acepto los términos y condiciones</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </form>
         </div>
-    
+
     </main>
     <footer>
-        <div class="footer-div">
+        <div>
             <div>
                 <p>Copyright © 2023 La Renga Todos los derechos reservados</p>
             </div>
             <div class="redes-footer"> <!--Enlaces redes sociales-->
-                    <p>Podes seguirnos en estas  redes sociales
+                <p>Podes seguirnos en estas redes sociales
                     Y
                     No perderte nuestras novedades!!</p>
             </div>
             <div class="redes-footer">
                 <a href="https://www.instagram.com/larenga/"><img src="../asset/img/instagram.png" alt=""></a>
-                <a href="https://www.youtube.com/channel/UCJayVZRg7OUgxDnzI1lU82Q"><img src="../asset/img/youtube.png" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCJayVZRg7OUgxDnzI1lU82Q"><img src="../asset/img/youtube.png"alt=""></a>
                 <a href="https://www.facebook.com/larenga?locale=es_LA"><img src="../asset/img/facebook.png" alt=""></a>
-                <a href="https://open.spotify.com/artist/30fEdZPXgWfC4sNttcyB3C?si=ymhSw81MSEahC4p6P1Ma6A"><img src="../asset/img/spotify.png" alt=""></a>    
+                <a href="https://open.spotify.com/artist/30fEdZPXgWfC4sNttcyB3C?si=ymhSw81MSEahC4p6P1Ma6A"><img src="../asset/img/spotify.png" alt=""></a>
             </div>
-        </div>        
-        </footer>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </body>
+
 </html>
